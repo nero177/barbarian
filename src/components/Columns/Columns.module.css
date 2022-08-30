@@ -1,0 +1,22 @@
+.colLeft, .colRight{
+    position: absolute;
+    top: 0px;
+}
+
+.colLeft img, .colRight img{
+    height: 98vh;
+}
+
+.colLeft{
+    left: 0;
+}
+
+.colRight{
+    right: 0;
+}
+
+@media screen and (max-width: 930px){
+    .colLeft, .colRight{
+        display: none;
+    }
+}

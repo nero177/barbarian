@@ -1,0 +1,33 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    height: 100vh;
+}
+
+.logo{
+    margin-top: 10px;
+}
+
+.logo img{
+    width: 200px;
+}
+
+.date{
+    font-size: 24px;
+    color: var(--font-yellow);
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 800px){
+    .date{
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .logo img{
+        width: 150px;
+    }
+}

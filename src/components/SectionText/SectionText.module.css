@@ -1,0 +1,41 @@
+.sectionText{
+    font-size: calc(1vw + 1vh + 4px);
+    font-family: green-groove;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 40px;
+    max-width: 50%;
+    position: relative;
+    --sectionTextImgWidth: 280px;
+}
+
+.sectionText img{
+    position: absolute;
+    left: calc(50% - var(--sectionTextImgWidth) / 2);
+    top: -45px;
+    width: var(--sectionTextImgWidth);
+}
+
+.sectionText span{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1600px){
+    .sectionText{
+        font-size: calc(1vw + 1vh + 1px);
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .sectionText{
+        --sectionTextImgWidth: 180px; 
+    }
+}
+
+@media screen and (max-width: 800px){
+    .sectionText{
+        font-size: 20px;
+        max-width: 100%;
+    }
+}

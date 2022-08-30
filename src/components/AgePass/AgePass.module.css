@@ -1,0 +1,27 @@
+.title{
+    font-size: 30px;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+.btns div{
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.confirm{
+    background-color: #E8B82F;
+}
+
+.decline{
+    background-color: #e8512f;
+}
+
+.wrapper{
+    color: #000;
+}
+

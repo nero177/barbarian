@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Columns from './components/Columns';
+
+import Main from './components/pages/Main';
+import Brewery from './components/pages/Brewery.jsx';
+import Beer from './components/pages/Beer.jsx';
+import Hops from './components/pages/Hops.jsx';
+import Laboratory from './components/pages/Laboratory.jsx';
+
+import {Routes, Route} from 'react-router-dom';
+import MusicPopup from "./components/MusicPopup";
+import Modal from "./components/Modal";
+import AgePass from "./components/AgePass";
 
 function App() {
+  const [turnMusic, setTurnMusic] = useState(false);
+  const [modalOpened, setModalOpened] = useState(true);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Columns/>
+      <MusicPopup turnMusic={turnMusic} setTurnMusic={setTurnMusic}/>
+
+      <Modal modalOpened={modalOpened}>
+        <AgePass setModalOpened={setModalOpened} setTurnMusic={setTurnMusic}/>
+      </Modal>
+
+      <Routes>
+        <Route path="/" element={<Main/>}/>  
+        <Route path="/brewery" element={<Brewery/>}/> 
+        <Route path="/beer" element={<Beer/>}/> 
+        <Route path="/hops" element={<Hops/>}/> 
+        <Route path="/laboratory" element={<Laboratory/>}/> 
+      </Routes> 
+    </React.Fragment>
   );
 }
 
