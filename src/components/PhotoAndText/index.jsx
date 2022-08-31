@@ -35,7 +35,7 @@ const PhotoAndText = (props) => {
         transition={transition}
         style={props.reverse ? {gridColumn: 2} : ''}
       >
-        <img src={props.photoSrc} alt={props.alt} />
+        <img src={props.photoSrc} alt={props.alt} loading="lazy"/>
       </motion.div>
 
       <motion.div
