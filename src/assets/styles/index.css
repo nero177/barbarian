@@ -1,6 +1,10 @@
 @import url('fonts.css');
 @import url('media.css');
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: green-groove;
     position: relative;
@@ -9,6 +13,12 @@ body{
     background-position: 50% 20%;
     color: #fff;
     overflow-x: hidden;
+    margin: 0 auto;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
 }
 
 :root{

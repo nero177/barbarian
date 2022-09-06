@@ -1,0 +1,36 @@
+.wrapper{
+    width: 100%;
+    background-color: rgba(0,0,0, .2);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.wrapper h2{
+    padding-top: 20px;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    gap: 0 20px;
+}
+
+.social img{
+    width: 30px;
+}
+
+.maps{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footerItem{
+    font-size: 22px;
+    margin: 15px 20px;
+}
+
+.footerItem img{
+    width: 15px;
+    margin-right: 5px;
+}

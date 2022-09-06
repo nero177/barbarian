@@ -7,11 +7,10 @@ import { motion } from "framer-motion/dist/framer-motion";
 import { fade, transition } from "../../../animations";
 
 const Main = () => {
-  
   return (
     <motion.div
-      initial='in'
-      animate='out'
+      initial="in"
+      animate="out"
       variants={fade}
       transition={transition}
     >

@@ -2,8 +2,6 @@
     position: fixed;
     display: flex;
     align-items: center;
-    left: 20%;
-    top: 0;
     background-color: rgba(0, 0, 0, 0.323);
     padding: 10px;
     border-radius: 0 0 15px 15px;
@@ -11,6 +9,8 @@
     cursor: pointer;
     transition: .5s all;
     z-index: 99;
+    top: 0;
+    right: 20%;
 }
 
 .wrapper:hover{
@@ -18,12 +18,12 @@
 }
 
 .wrapper img{
-    width: 20px;
+    width: 30px;
     padding-left: 10px;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
     .wrapper{
-        left: 5%;
+        right: 5%;
     }
 }

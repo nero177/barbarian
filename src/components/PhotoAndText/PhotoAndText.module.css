@@ -18,6 +18,10 @@
     font-size: 22px;
 }
 
+.imageContain{
+    object-fit: contain !important;
+}
+
 @media screen and (max-width: 1200px) {
     .wrapper{
         grid-template-columns: 40% 40%;

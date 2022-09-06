@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Columns from './components/Columns';
+import Footer from './components/Footer';
 
 import Main from './components/pages/Main';
 import Brewery from './components/pages/Brewery.jsx';
@@ -32,6 +33,8 @@ function App() {
         <Route path="/hops" element={<Hops/>}/> 
         <Route path="/laboratory" element={<Laboratory/>}/> 
       </Routes> 
+
+      <Footer/>
     </React.Fragment>
   );
 }
