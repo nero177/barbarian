@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import classes from "./Pages.module.css";
 import logo from "../../assets/images/justlogo.png";
 import SlickGallery from "../SlickGallery";
@@ -17,6 +17,10 @@ import ph4 from "../../assets/images/photos/hops/4.webp";
 const images = [ph1, ph2, ph3, ph4];
 
 const Hops = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+  
   return (
     <motion.div
       initial="in"
@@ -35,7 +39,7 @@ const Hops = () => {
 
           <h1 className="page-header">"Barbarian Hops"</h1>
           <SlickGallery images={images} />
-          <SectionText>
+          <SectionText date="2023">
             Крестьянское (фермерское) хозяйство "Барбариан Хопс"
             специализируется на выращивании и селекции хмеля в Челябинской
             области. Планируемая дата создания 2023 год. Организационно-правовая

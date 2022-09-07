@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import classes from "./Pages.module.css";
 import logo from "../../assets/images/justlogo.png";
 import SlickGallery from "../SlickGallery";
@@ -21,6 +21,10 @@ import ph8 from "../../assets/images/efes.jpg";
 const images = [ph1, ph2, ph3, ph4, ph5];
 
 const Beer = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+
   return (
     <motion.div
       initial="in"
@@ -39,7 +43,7 @@ const Beer = () => {
 
           <h1 className="page-header">"Barbarian Beer"</h1>
           <SlickGallery images={images} />
-          <SectionText>
+          <SectionText date="2019">
             Первый BEER-БУТИК в городе Озёрск Челябинской области.
             Специализируется на розничной продаже слабоалкогольных разливных
             напитков сегмента HoReCa. Необычный интерьер в древнеримском стиле,
@@ -52,7 +56,7 @@ const Beer = () => {
         </div>
 
         <div className="secondSection">
-          <PhotoAndText photoSrc={ph6} imageContain="true">
+          <PhotoAndText photoSrc={ph8} imageContain="true">
             Barbarian Beer является официальным партнером и сотрудничает с 2019
             года с AB InBev Efes российской транснациональной компанией.
           </PhotoAndText>
@@ -60,7 +64,7 @@ const Beer = () => {
             Barbarian Beer является официальным партнером и сотрудничает с 2020
             года с Carlsberg Group датской транснациональной компанией.
           </PhotoAndText>
-          <PhotoAndText photoSrc={ph8} imageContain="true">
+          <PhotoAndText photoSrc={ph6} imageContain="true">
             Barbarian Beer структурно входит в группу компаний с начала создания
             2021 г. в Barbarian® - российская региональная компания.
           </PhotoAndText>

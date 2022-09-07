@@ -18,7 +18,7 @@ const Main = () => {
         <div className={classes.logo}>
           <img src={logoImage} alt="Barbarian" />
         </div>
-        <div className={`${classes.date} text-shadow`}>2021</div>
+        <div className="date text-shadow">2021</div>
 
         <SectionText>
           <span>«Барбариан»</span> (прим. лат Barbarian) - группа предприятий

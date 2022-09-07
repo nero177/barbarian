@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import classes from "./Pages.module.css";
 import logo from "../../assets/images/justlogo.png";
 import SlickGallery from "../SlickGallery";
@@ -23,6 +23,10 @@ import ph10 from "../../assets/images/photos/factory/завод7.JPG";
 const sliderImages = [ph4, ph5, ph6, ph7, ph8, ph9, ph10];
 
 const Brewery = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+
   return (
     <motion.div
       initial="in"
@@ -43,7 +47,7 @@ const Brewery = () => {
             Частная крафтовая пивоварня "Barbarian Brewery"
           </h1>
           <SlickGallery images={sliderImages} />
-          <SectionText>
+          <SectionText date="2021">
             Частная крафтовая пивоварня «Barbarian Brewery», специализируется на
             производстве высококачественных брендированных слабоалкогольных
             напитков сегмента HoReCа. Уникальность предприятия в особой

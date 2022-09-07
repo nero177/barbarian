@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import classes from "./Pages.module.css";
 import logo from "../../assets/images/justlogo.png";
 import SlickGallery from "../SlickGallery";
@@ -18,6 +18,12 @@ import ph5 from "../../assets/images/photos/laboratory/дрозжи3.webp";
 const images = [ph1, ph2, ph3, ph4, ph5];
 
 const Laboratory = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 800) 
+  }, [])
+
   return (
     <motion.div
       initial="in"
@@ -35,8 +41,8 @@ const Laboratory = () => {
           </div>
 
           <h1 className="page-header">"Barbarian Laboratory"</h1>
-          <SlickGallery images={images} />
-          <SectionText>
+          <SlickGallery images={images}/>
+          <SectionText date="2022">
             Лаборатория начала свою работу в 2021 году, при частной крафтовой
             пивоварне «Barbarian Brewery». Специализируется на разведении чистой
             культуры дрожжей как верхового так и низового брожения. Для

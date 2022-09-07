@@ -14,13 +14,6 @@
     width: 200px;
 }
 
-.date{
-    font-size: 24px;
-    color: var(--font-yellow);
-    font-weight: bold;
-    margin-top: 5px;
-}
-
 @media screen and (max-width: 800px){
     .date{
         font-size: 18px;
@@ -29,5 +22,11 @@
 
     .logo img{
         width: 150px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .wrapper{
+        height: initial !important;
     }
 }
